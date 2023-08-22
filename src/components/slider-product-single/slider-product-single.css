@@ -1,0 +1,15 @@
+.images-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.images-box .img {
+  width: calc(100% / 3);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.img-box .img img {
+  width: 100%;
+}

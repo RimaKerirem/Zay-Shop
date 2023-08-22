@@ -1,0 +1,41 @@
+.sidebar-shop li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sidebar-shop li span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.sidebar-shop li span .down {
+  color: initial;
+}
+
+.sidebar-shop li ul {
+  position: relative;
+  top: 15px;
+  display: none;
+  padding-bottom: 10px;
+}
+
+.sidebar-shop li ul.active {
+  display: block;
+}
+
+.sidebar-shop li ul li a {
+  font-size: 17px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.sidebar-shop li span:hover,
+.sidebar-shop li ul li a:hover {
+  opacity: 0.9;
+}

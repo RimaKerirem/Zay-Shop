@@ -1,0 +1,126 @@
+.shop-content .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "left left left right right right right right right right right right";
+}
+
+@media (max-width: 991px) {
+  .shop-content .container {
+    grid-template-areas:
+      "left left left left left left left left left left left left"
+      "right right right right right right right right right right right right";
+  }
+}
+
+.shop-content a {
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+.shop-content .shop-left {
+  grid-area: left;
+  color: var(--text-color);
+  margin-right: 40px;
+}
+
+@media (max-width: 991px) {
+  .shop-content .shop-left {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+.shop-content .shop-left h1 {
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.shop-content .shop-right {
+  grid-area: right;
+}
+
+.shop-content .shop-right .shop-right-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.shop-content .shop-right .shop-card {
+  width: calc((100% - 40px) / 3);
+}
+
+.shop-content .shop-right .shop-right-top .gender {
+  width: 50%;
+  display: flex;
+}
+
+.shop-content .shop-right .shop-right-top .gender li a {
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+.shop-content .shop-right .shop-right-top .gender li a:hover {
+  color: var(--green-color);
+}
+
+.shop-content .shop-right .shop-right-top select {
+  width: 50%;
+  border: 1px solid var(--text-light);
+  padding: 10px;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.shop-content .shop-right .shop-right-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shop-content .shop-right .shop-right-bottom li a {
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 4px var(--text-light);
+  font-size: 18px;
+
+  margin-left: 1px;
+}
+
+.shop-content .shop-right .shop-right-bottom li a.active,
+.shop-content .shop-right .shop-right-bottom li a:hover {
+  color: white;
+  background-color: var(--green-color);
+}
+
+@media (max-width: 767px) {
+  .shop-content .shop-right .shop-card {
+    width: 100%;
+  }
+
+  .shop-content .shop-right .shop-right-top .gender,
+  .shop-content .shop-right .shop-right-top select {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .shop-content .shop-right .shop-card .shop-card-body p,
+  .shop-content .shop-right .shop-card .shop-card-body .stars li {
+    font-size: 14px;
+  }
+}

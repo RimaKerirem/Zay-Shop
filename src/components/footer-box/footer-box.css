@@ -1,0 +1,31 @@
+.footer-box {
+  width: calc((100% - 60px) / 3);
+}
+
+@media (max-width: 767px) {
+  .footer-box {
+    width: 100%;
+  }
+
+  .footer-box:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-box .box-title {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.footer-box a:hover {
+  color: var(--green-color);
+}
+
+.footer-box .box-content {
+  padding-top: 20px;
+  border-top: 1px solid #2d343f;
+}
+
+.footer-box .box-content li:not(:last-child) {
+  margin-bottom: 15px;
+}

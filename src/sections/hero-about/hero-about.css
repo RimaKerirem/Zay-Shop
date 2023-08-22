@@ -1,0 +1,47 @@
+.hero-about {
+  background-color: var(--green-color);
+}
+
+.hero-about .container {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .hero-about .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-about .about-left {
+    width: 100% !important;
+  }
+
+  .hero-about .about-right {
+    width: 100% !important;
+  }
+}
+
+.hero-about .about-left {
+  color: white;
+  width: 67%;
+}
+
+.hero-about .about-left .about-title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero-about .about-left .about-text {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.hero-about .about-right {
+  width: 33%;
+}
+
+.hero-about .about-right img {
+  width: 100%;
+}

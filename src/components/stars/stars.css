@@ -1,0 +1,17 @@
+.stars {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stars li {
+  font-size: 22px;
+  margin-right: 3px;
+}
+
+.stars li.yellow {
+  color: var(--yellow-color);
+}
+
+.stars li.muted {
+  color: var(--text-muted);
+}

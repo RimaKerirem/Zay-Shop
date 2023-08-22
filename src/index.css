@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --yellow-color: #ede861;
+  --text-muted: #bcbcbc;
+  --green-color: #59ab6e;
+  --text-light: #cfd6e1;
+  --bg-dark: #212934;
+  --bg-light: #e9eef5;
+  --bg-black: #1d242d;
+  --text-color: #212529;
+  --padding-section: 60px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.25);
+}
+
+section {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}

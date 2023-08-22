@@ -1,0 +1,14 @@
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item a {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.nav-item:hover a,
+.nav-item a.active {
+  color: var(--green-color);
+}

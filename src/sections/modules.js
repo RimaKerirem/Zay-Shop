@@ -1,0 +1,14 @@
+export { default as TopNav } from "./top-nav/TopNav";
+export { default as Header } from "./header/Header";
+export { default as HeroHome } from "./hero-home/HeroHome";
+export { default as Categories } from "./categories/Categories";
+export { default as FeaturedProduct } from "./featured-product/FeaturedProduct";
+export { default as Footer } from "./footer/Footer";
+export { default as HeroAbout } from "./hero-about/HeroAbout";
+export { default as Services } from "./services/Services";
+export { default as Brands } from "./brands/Brands";
+export { default as HeroContact } from "./hero-contact/HeroContact";
+export { default as FormContact } from "./form-contact/FormContact";
+export { default as ShopContent } from "./shop-content/ShopContent";
+export { default as ProductSingle } from "./product-single/ProductSingle";
+export { default as RelatedProducts } from "./related-products/RelatedProducts";

@@ -1,0 +1,35 @@
+.img-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-container .img-item {
+  width: 25%;
+  padding: 40px;
+}
+
+@media (max-width: 767px) {
+  .img-container .img-item {
+    padding: 10px;
+  }
+}
+
+.img-container .img-item a img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.img-container .img-item a img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  opacity: 1;
+}
